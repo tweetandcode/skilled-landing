@@ -155,7 +155,7 @@ h1.heading-l {
   background: white;
   padding: 0px 28px 32px 28px;
   border-radius: 10px;
-}
+} 
 
 .category img {
   position: absolute;
@@ -207,4 +207,64 @@ footer.container {
   font-weight: 800;
   font-size: 28px;
   line-height: 35px;
+}
+
+.tablet-only-tile{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 40px;
+  }
+
+  .tablet-only-tile {
+    display: block;
+    background: var(--button-b-gradient);
+    color: white;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 56px;
+  }
+
+  .details {
+    display: none;
+  }
+
+  .category-list {
+    display: grid;
+    row-gap: 56px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  header {
+    display: flex;
+    margin-top: 73px;
+    margin-bottom: 186px;
+  }
+
+  header div.content {
+    width: 398px;
+  }
+
+  .hero-image{
+    position: relative;
+  }
+
+  picture {
+    clip-path: polygon(0 0, 0 100%, 410px 100%, 408px 0);
+    position: absolute;
+    top: -280px;
+    left: -80px;
+    z-index: 10;
+  }
+
+  picture img {
+    width: auto;
+    height: auto;
+  }
 }
