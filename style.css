@@ -77,7 +77,7 @@ body {
 }
 
 .button-a:hover {
-  background: var(--button-a-hover );
+  background: var(--button-a-hover);
 }
 
 .button-b {
@@ -262,6 +262,7 @@ footer.container {
     top: -280px;
     left: -80px;
     z-index: 10;
+    pointer-events: none;
   }
 
   picture img {
