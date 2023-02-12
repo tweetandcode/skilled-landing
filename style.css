@@ -152,6 +152,8 @@ h1.heading-l {
 }
 
 .category {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: white;
   padding: 0px 28px 32px 28px;
@@ -183,6 +185,7 @@ h1.heading-l {
 }
 
 .category a {
+  margin: auto 0 0 0;
   font-family: 'Plus Jakarta Sans';
   font-weight: 700;
   font-size: 18px;
